@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>controllersFacturaAddController</servlet-name>
+		<servlet-class>controllers.factura.AddController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controllersFacturaAddController</servlet-name>
+		<url-pattern>/insertar</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Eliminar</servlet-name>
+		<servlet-class>controllers.factura.DeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Eliminar</servlet-name>
+		<url-pattern>/eliminar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Modificar</servlet-name>
+		<servlet-class>controllers.factura.EditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Modificar</servlet-name>
+		<url-pattern>/modificar</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>controllersFacturaViewContraller</servlet-name>
+		<servlet-class>controllers.factura.ViewContraller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controllersFacturaViewContraller</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
