@@ -4,40 +4,150 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
 	<servlet>
-		<servlet-name>controllersFacturaAddController</servlet-name>
-		<servlet-class>controllers.factura.AddController</servlet-class>
+		<servlet-name>FacturaControllerAdd</servlet-name>
+		<servlet-class>controller.factura.FacturaControllerAdd</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>controllersFacturaAddController</servlet-name>
-		<url-pattern>/insertar</url-pattern>
+		<servlet-name>FacturaControllerAdd</servlet-name>
+		<url-pattern>/factura/add</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>FacturaControllerIndex</servlet-name>
+		<servlet-class>controller.factura.FacturaControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacturaControllerIndex</servlet-name>
+		<url-pattern>/factura</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>FacturaControllerView</servlet-name>
+		<servlet-class>controller.factura.FacturaControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacturaControllerView</servlet-name>
+		<url-pattern>/factura/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>FacturaControllerDelete</servlet-name>
+		<servlet-class>controller.factura.FacturaControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacturaControllerDelete</servlet-name>
+		<url-pattern>/factura/delete</url-pattern>
 	</servlet-mapping>
+
 	<servlet>
-		<servlet-name>Eliminar</servlet-name>
-		<servlet-class>controllers.factura.DeleteController</servlet-class>
+		<servlet-name>RolesControllerAdd</servlet-name>
+		<servlet-class>controller.roles.RolesControllerAdd</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Eliminar</servlet-name>
-		<url-pattern>/eliminar</url-pattern>
+		<servlet-name>RolesControllerAdd</servlet-name>
+		<url-pattern>/roles/add</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>RolesControllerIndex</servlet-name>
+		<servlet-class>controller.roles.RolesControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RolesControllerIndex</servlet-name>
+		<url-pattern>/roles</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>RolesControllerView</servlet-name>
+		<servlet-class>controller.roles.RolesControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RolesControllerView</servlet-name>
+		<url-pattern>/roles/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>RolesControllerDelete</servlet-name>
+		<servlet-class>controller.roles.RolesControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RolesControllerDelete</servlet-name>
+		<url-pattern>/roles/delete</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Modificar</servlet-name>
-		<servlet-class>controllers.factura.EditController</servlet-class>
+		<servlet-name>ResourcesControllerAdd</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerAdd</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Modificar</servlet-name>
-		<url-pattern>/modificar</url-pattern>
-	</servlet-mapping>
+		<servlet-name>ResourcesControllerAdd</servlet-name>
+		<url-pattern>/resources/add</url-pattern>
+	</servlet-mapping>	
 	<servlet>
-		<servlet-name>controllersFacturaViewContraller</servlet-name>
-		<servlet-class>controllers.factura.ViewContraller</servlet-class>
+		<servlet-name>ResourcesControllerIndex</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerIndex</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>controllersFacturaViewContraller</servlet-name>
-		<url-pattern>/view</url-pattern>
+		<servlet-name>ResourcesControllerIndex</servlet-name>
+		<url-pattern>/resources</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ResourcesControllerView</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourcesControllerView</servlet-name>
+		<url-pattern>/resources/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>ResourcesControllerDelete</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourcesControllerDelete</servlet-name>
+		<url-pattern>/resources/delete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AccessControllerAdd</servlet-name>
+		<servlet-class>controller.access.AccessControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerAdd</servlet-name>
+		<url-pattern>/access/add</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>AccessControllerIndex</servlet-name>
+		<servlet-class>controller.access.AccessControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerIndex</servlet-name>
+		<url-pattern>/access</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>AccessControllerView</servlet-name>
+		<servlet-class>controller.access.AccessControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerView</servlet-name>
+		<url-pattern>/access/view</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>AccessControllerDelete</servlet-name>
+		<servlet-class>controller.access.AccessControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerDelete</servlet-name>
+		<url-pattern>/access/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UsersControllerTest</servlet-name>
+		<servlet-class>controller.users.UsersControllerTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerTest</servlet-name>
+		<url-pattern>/users/test</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
+	
 </web-app>
